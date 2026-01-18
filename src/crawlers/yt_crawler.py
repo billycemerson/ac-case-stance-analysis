@@ -145,7 +145,8 @@ class YouTubeCrawler:
         video_metadata_df = pd.DataFrame(video_metadata_rows)
         comments_df = pd.DataFrame(comments_rows)
 
-        output_dir = Path("../data")
+        project_root = Path(__file__).resolve().parent.parent.parent
+        output_dir = project_root / "data" / "crawler"
         output_dir.mkdir(parents=True, exist_ok=True)
 
         video_metadata_df.to_csv(
