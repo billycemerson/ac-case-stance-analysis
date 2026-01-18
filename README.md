@@ -125,9 +125,11 @@ links = [
 
 ### Output
 
-The crawler will save two CSV files in the `data/` directory:
+The crawler will save two CSV files in the `data/crawler/` directory:
 - `video_metadata.csv` - Contains video information (title, description, views, likes, etc.)
 - `comments_data.csv` - Contains all comments from the videos
+
+> **Note:** Data files are not stored in Git. See [DATA.md](DATA.md) for data access information.
 
 ## Project Structure
 
